@@ -1,0 +1,19 @@
+@import './variables';
+
+@mixin font($f-weight, $f-size, $line-height) {
+  font-size: $f-size;
+  line-height: $line-height;
+  font-weight: $f-weight;
+  font-style: normal;
+  font-family: inherit;
+}
+
+// @function gen-box-shadow(
+//   $offset-x: 0px,
+//   $offset-y: 0px,
+//   $blur-radius: 20px,
+//   $spread-radius: 0px,
+//   $color: $primary-color
+// ) {
+//   @return ($offset-x $offset-y $blur-radius $spread-radius $color);
+// }

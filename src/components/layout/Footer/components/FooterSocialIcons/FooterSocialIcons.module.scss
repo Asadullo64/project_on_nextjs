@@ -1,0 +1,52 @@
+@import "@/src/assets/sass/variables";
+@import "@/src/assets/sass/media";
+@import "@/src/assets/sass/utilities";
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  &__block{
+    width: 500px;
+    text-align: center;
+  }
+  &__txt {
+    font-weight: $font-bold;
+    @include x-small {
+      font-size: $x-small-paragraph-size;
+      line-height: $line-height-primary;
+    }
+
+    @include x-large {
+      font-size: $desktop-paragraph-size;
+      line-height: $line-height-primary;
+    }
+  }
+
+  &__media {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &_img {
+      @include x-small {
+        width: 20px;
+        height: 20px;
+      }
+
+      @include x-large {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    &_link {
+      @include x-small {
+        height: 20px;
+      }
+
+      @include x-large {
+        height: 30px;
+      }
+    }
+  }
+}

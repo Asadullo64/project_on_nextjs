@@ -1,18 +1,24 @@
-// This variable is a basic setup to ensure that anyone viewing my code understands its purpose. It helps manage colors and pixel values consistently across the project, preventing incorrect pixel usage in certain places. This approach keeps the code accurate and maintains proper focus.
+// This variable is a basic setup to ensure that anyone viewing my code
+//  understands its purpose. It helps manage colors and pixel values consistently 
+//  across the project, preventing incorrect pixel usage in certain places. 
+//  This approach keeps the code accurate and maintains proper focus.  
+//                  Asadullo
+
+
 //* colors
-// Основные цвета
+// Primary colors
 $primary-color: #2797ff;
 $primary-light-color: #66b5ff;
 $primary-dark-color: #0076e2;
 
-// Второстепенные цвета
+// Secondary colors
 $black-color: #1e1e1e;
 $grey-color: #d1d1d1;
 $grey-dark-color: #7e7e7e;
 $grey-light-color: #ececec;
 $white-color: #ffffff;
 
-// Другие цвета
+// Other colors
 $yellow-color: #ffc331;
 $yellow-opacity-color: rgba(255, 195, 49, 0.55);
 $red-color: #ed4c5c;
