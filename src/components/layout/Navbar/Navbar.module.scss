@@ -1,0 +1,44 @@
+@import "@/src/assets/sass/variables";
+@import "@/src/assets/sass/media";
+@import "@/src/assets/sass/utilities";
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-block: 16px;
+  &_list {
+    @include x-small {
+      gap: 10px;
+    }
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: auto;
+    li {
+        font-weight: $font-medium;
+        text-transform: uppercase;
+
+      @include x-small {
+        font-size: $x-small-paragraph-size;
+      }
+      @include x-large {
+        // padding: 50px 0;
+        font-size: $desktop-paragraph-size;
+      }
+    
+      //   &:first-child {
+      //     margin-right: 24px;
+      //   }
+      a {
+        transition: all 0.3s;
+      }
+
+      &:hover {
+        a {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
