@@ -16,13 +16,17 @@ export const PlacesList: React.FC = () => {
     <div className={styles.block}>
       {places.map((place) => (
         <div key={place.id} className={styles.card}>
-          <Image
-            className={styles.card__image}
-            src={place.imageUrl}
-            width={200}
-            height={240}
-            alt="Picture of the author"
-          />
+         {place.imageUrl ? (
+            <Image
+              className={styles.card__image}
+              src={place.imageUrl}
+              width={200}
+              height={240}
+              alt="Picture of the author"
+            />
+          ) : (
+            <div className={styles.card__image_placeholder}>No Image Available</div>
+          )}
           <div className={styles.card__block}>
             <h2 className={styles.card__block_title}>{place.name}</h2>
             <span className={styles.card__block_details}>

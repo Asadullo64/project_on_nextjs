@@ -35,13 +35,17 @@ export const PlaceDetails: React.FC<PlaceDetailsProps> = ({ id }) => {
       <div className="container">
         <div className={styles.detail__block}>
           <div>
-            <Image
-              className={styles.detail__image}
-              src={place.imageUrl}
-              width={200}
-              height={240}
-              alt="Picture of the author"
-            />
+          {place.imageUrl ? (
+              <Image
+                className={styles.detail__image}
+                src={place.imageUrl}
+                width={200}
+                height={240}
+                alt="Picture of the author"
+              />
+            ) : (
+              <div>No Image Available</div>
+            )}
           </div>
           <div className={styles.detail__info}>
             <h1 className={styles.detail__info__name}>{place.name}</h1>
