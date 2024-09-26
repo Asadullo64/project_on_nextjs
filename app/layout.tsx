@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { font } from "@/src/assets/fonts/fonts";
-import { Footer, Navbar } from "@/src/components";
+import { Footer, } from "@/src/components";
+// import {  Navbar } from "@/src/components";
 import ProviderWrapper from "@/redux/ProviderWrapper";
 import "../src/assets/sass/index.scss";
 
