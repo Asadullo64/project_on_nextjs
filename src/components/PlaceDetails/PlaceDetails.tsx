@@ -49,9 +49,6 @@ export const PlaceDetails: React.FC<PlaceDetailsProps> = ({ id }) => {
             <br />
             <p className={styles.detail__info__descr}>{place.description2}</p>
             <div className="padding">
-              {/* <button className={styles.button} onClick={handleUpdate}>
-                {place.visited ? "Unmark as Visited" : "Mark as Visited"}
-              </button> */}
               <button
                 className={`${styles.button} ${
                   place.visited ? styles.unmarkButton : styles.markButton
